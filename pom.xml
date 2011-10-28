@@ -3,14 +3,14 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.405</version><!-- which version of Jenkins is this plugin built against? -->
+    <version>1.436</version><!-- which version of Jenkins is this plugin built against? -->
   </parent>
 
   <artifactId>seleniumhtmlreport</artifactId>
   <name>Selenium HTML report</name>
   <description>This is an jenkins plugin to visualize the results of selenium tests</description>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/seleniumhtmlreport+Plugin</url>
-  <version>0.94-SNAPSHOT</version>
+  <version>0.94-topicus</version>
   <packaging>hpi</packaging>
 
   <developers>
@@ -31,10 +31,11 @@
     <url>https://github.com/jenkinsci/seleniumhtmlreport</url>
   </scm>
 
-  <distributionManagement>
+<distributionManagement>
     <repository>
-      <id>maven.jenkins-ci.org</id>
-      <url>http://maven.jenkins-ci.org:8081/content/repositories/releases/</url>
+        <id>topicus-repo</id>
+        <name>darrk.topicus.local-releases</name>
+        <url>http://repo-onderwijs/artifactory/ext-releases-local</url>
     </repository>
-  </distributionManagement>
+</distributionManagement>
 </project>
